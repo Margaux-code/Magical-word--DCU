@@ -13,3 +13,4 @@ Magical_Beeing::Magical_Beeing(std::string name, int age,int quantity_of_magic, 
 
 //Destructor
 Magical_Beeing::~Magical_Beeing(){}
+

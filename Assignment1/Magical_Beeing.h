@@ -1,6 +1,7 @@
 #ifndef MAGICAL_BEEING_H_INCLUDED
 #define MAGICAL_BEEING_H_INCLUDED
 #include <string>
+
 class Magical_Beeing
 {
 protected :
@@ -14,6 +15,8 @@ public :
     Magical_Beeing(std::string name, int age,int quantity_of_magic, int health);
 
 };
+
+
 
 
 
