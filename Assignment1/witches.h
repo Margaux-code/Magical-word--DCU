@@ -6,7 +6,7 @@
 
  class witches : public Magical_Beeing
 {
-private :
+protected :
     std::string m_hogwarts_house;
 public :
     witches(std::string hogwarts_house,std::string name);
