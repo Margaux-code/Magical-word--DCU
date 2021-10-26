@@ -3,7 +3,7 @@
 nature_fairies::nature_fairies() : fairies(){}
 nature_fairies::nature_fairies(std::string name, int age) : fairies (name,age){}
 nature_fairies::~nature_fairies() {}
-void nature_fairies::fairies_magic()
+void nature_fairies::fairies_magic() //Point 10 : dynamic binding
 {
     std::cout <<"Magicali Magicalu Magicalo planty planto this is nature fairy magic" << std::endl;
     m_quantity_of_magic -= 5; // Point 11 : overload operator
@@ -20,11 +20,7 @@ void nature_fairies::transform_human_age()
     m_age *= 0.35; // Point 11 : overload operator
 
 }
-
-
-
 void nature_fairies::see_age() const
 {
     std::cout<<m_age<<std::endl;
-
 }

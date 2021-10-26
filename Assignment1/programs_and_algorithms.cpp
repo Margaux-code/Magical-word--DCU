@@ -15,7 +15,7 @@ void passing_object_by_reference(nature_fairies& a_fairy)
 
 void passing_object_by_constant_reference(const nature_fairies& a_fairy)
 {
-    std::cout << "The age of the constant fairy is "; // Point 6 : The function  see_age has to be a constant to be used by a constant qualified
+    std::cout << "The age of the constant fairy is "; // Point 6 : The function  see_age has to be a constant
     a_fairy.see_age(); ///13
     std::cout <<"This fairy can't take age, she is a constant"<<std::endl;
 
@@ -31,7 +31,7 @@ void see_the_school(fire_fairies school_of_fairies[3])
     std::cout << "School ? let's test your magic :"<< std::endl;
     for (int i =0; i<3; i++)
     {
-        school_of_fairies[i].fairies_magic();
+        school_of_fairies[i].fairies_magic();  //Display every fire_fairy
     }
     std::cout <<std::endl;
 }
@@ -53,7 +53,7 @@ struct orque // Point 17 : difference between a structure and a class
     std::string name;
 
 };
-void creation_object()
+void main_routine()
 {
     int age =29;
     std::string nom = "Flora";
@@ -80,10 +80,10 @@ void creation_object()
     // Point 7 : correct use of new and delete
     fire_fairies *Stella = new fire_fairies("Stella", 105);
     std::cout <<"Stella has before her attack this quantity of magic : ";
-    Stella->see_quantity_of_magic(); // Operation using pointers
-    attack_fire_fairy(*Stella);
+    Stella->see_quantity_of_magic(); // Operation using pointers ///100
+    attack_fire_fairy(*Stella);///Magicali Magicalu Magicalo firy firo this is fire magic
     std::cout <<"Stella has before her attack this quantity of magic : ";
-    Stella->see_quantity_of_magic(); // Operation using pointers
+    Stella->see_quantity_of_magic(); // Operation using pointers ///95
     delete Stella; //Point 9 : first use of a destructor
 
     // Point 8 : creating an array of pointers to object
@@ -122,14 +122,14 @@ void creation_object()
     mixed_magical migimix;
     int counter = migimix.return_mixt_magical();
     std::cout <<"There is "<<counter <<" mixed magical beeing" <<std::endl; // Point 16 : the counter has incremented
-
-    std::cout << "age of the orque"<< an_orque.age << std::endl; // Point 17 : possibility to access attribute of the structure outside of the structure
+// Point 17 : possibility to access attribute of the structure outside of the structure
+    std::cout << "age of the orque"<< an_orque.age << std::endl;
     // Point 17 to see the age of an object you need to create a function in the class to access the attribute :
     std::cout << "age of nature fairy " ;
     Musa.see_age();
 
     // Point 19 : vector
-    std::vector <nature_fairies> Alliance_of_fairies; // POint 19 : creation of the vecto
+    std::vector <nature_fairies> Alliance_of_fairies; // POint 19 : creation of the vector
     Alliance_of_fairies.push_back(Flora); // POint 19 : putting elements in the vector
     nature_fairies Melissa("Melissa", 1245);
     Alliance_of_fairies.push_back(Melissa);

@@ -3,7 +3,6 @@
 
 int main()
 {
-    std::cout << "Hello world!" << std::endl;
-    creation_object();
+    main_routine();
     return 0;
 }

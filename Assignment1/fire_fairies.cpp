@@ -3,7 +3,7 @@
     fire_fairies::fire_fairies() : fairies() {}
     fire_fairies::fire_fairies(std::string name, int age) :fairies(name,age) {}
     fire_fairies::~fire_fairies(){}
-    void fire_fairies::fairies_magic()
+    void fire_fairies::fairies_magic() // Point 10 : dynamic binding
     {
         std::cout <<"Magicali Magicalu Magicalo firy firo this is fire fairy magic" << std::endl;
         m_quantity_of_magic -= 5; // Point 11 : overlode operator

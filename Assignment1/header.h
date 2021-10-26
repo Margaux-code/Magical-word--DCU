@@ -11,8 +11,5 @@
 #include <stdlib.h>
 #include <vector>
 
-void creation_object();
-void transform_human_age_reference(int& age_fairy);
-void transform_human_age_value(int age_fairy);
-
+void main_routine();
 #endif // HEADER_H_INCLUDED
