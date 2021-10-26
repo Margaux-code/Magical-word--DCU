@@ -3,12 +3,12 @@
 
 //Constructor
 Magical_Beeing::Magical_Beeing(){}
-Magical_Beeing::Magical_Beeing(std::string name, int age,int quantity_of_magic, int health)
+Magical_Beeing::Magical_Beeing(std::string name, int age)
 {
     m_name =name;
     m_age=age;
-    m_quantity_of_magic= quantity_of_magic;
-    m_health=health;
+    m_quantity_of_magic= 100;
+    m_health=100;
 }
 
 //Destructor

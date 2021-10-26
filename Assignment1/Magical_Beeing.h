@@ -7,12 +7,12 @@ class Magical_Beeing
 protected :
     std::string m_name;
     int m_age;
-    int m_quantity_of_magic;
+    int    m_quantity_of_magic;
     int m_health;
 public :
     Magical_Beeing();
     ~Magical_Beeing();
-    Magical_Beeing(std::string name, int age,int quantity_of_magic, int health);
+    Magical_Beeing(std::string name, int age);
 
 };
 
