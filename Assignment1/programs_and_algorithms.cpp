@@ -132,9 +132,18 @@ void main_routine()
     std::vector <nature_fairies> Alliance_of_fairies; // POint 19 : creation of the vector
     Alliance_of_fairies.push_back(Flora); // POint 19 : putting elements in the vector
     nature_fairies Melissa("Melissa", 1245);
+    if (Alliance_of_fairies[0].tonus_magic_minus_age()>= Alliance_of_fairies[1].tonus_magic_minus_age()) // Point 20 :
+    {
+        Alliance_of_fairies.pop_back(); // Point 20 : algorithm on my container
+        Alliance_of_fairies.pop_back(); // inverse the place of the two fairies in the container
+        Alliance_of_fairies.push_back(Melissa);
+        Alliance_of_fairies.push_back(Flora);
+    }
+
     Alliance_of_fairies.push_back(Melissa);
     Alliance_of_fairies.pop_back(); // POint 19 : emptying the vector
     Alliance_of_fairies.pop_back();
+
 
 } // Point 9 : At the end of a scope the destructor is automaticly called to destroy the simple object created (Musa and Flora here)
 
