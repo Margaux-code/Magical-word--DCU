@@ -33,9 +33,9 @@ void non_member_operator(Magical_Beeing& A_beeing) // Passing the function by re
 }
 
 
-Magical_Beeing Magical_Beeing::calculating_health()
+Magical_Beeing Magical_Beeing::calculating_health( Magical_Beeing A_being)
 {
-    Magical_Beeing A_being;
+
     non_member_operator(A_being); // Point 12 a function passing itself to a function(by reference)
     // POint 12 : so it changes the state of this object
     return A_being;

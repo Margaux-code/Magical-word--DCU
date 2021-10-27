@@ -15,7 +15,7 @@ public :
     int get_age();
     int get_quantity_of_magic();
     void set_health(int new_age);
-    Magical_Beeing calculating_health(); //Point 12 and 13
+    Magical_Beeing calculating_health(Magical_Beeing A_being); //Point 12 and 13
 
 };
 #endif // MAGICAL_BEEING_H_INCLUDED
